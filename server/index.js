@@ -3,6 +3,7 @@ import bodyParser from "body-parser";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 import AuthRoute from "./Routes/AuthRoute.js";
+import UserRoute from "./Routes/UserRoute.js";
 import PostRoute from './Routes/PostRoute.js';
 
 //Router
@@ -31,3 +32,4 @@ mongoose
   //Usage of routes
   app.use('/auth', AuthRoute)
   app.use('/post', PostRoute)
+  app.use('/user', UserRoute)
